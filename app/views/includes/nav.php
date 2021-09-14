@@ -26,6 +26,9 @@
         <li class="btn-login">
             <a href="/BREVIS/app/views/home/register.php">Sign Up</a>
         </li>
+        <li class="btn-login">
+            <a href="/BREVIS/app/views/home/login.php">Login</a>
+        </li>
     </ul>
 </nav>
 </body>

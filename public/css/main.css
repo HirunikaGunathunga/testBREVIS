@@ -47,6 +47,14 @@ form{
     width: 360px;
 }
 
+.lform{
+    background-color: rgba(250, 245, 245, 0.171);
+    width: 470px;
+	height: 650px;
+    padding: 30px;
+    
+}
+
 .login-content img{
     height: 100px;
 }
@@ -177,7 +185,30 @@ a:hover{
     cursor: pointer;
     transition: .5s;
 }
+
+.btn1{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #51df80, #60e08b, #41c76e);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
 .btn:hover{
+    background-position: right;
+}
+
+.btn1:hover{
     background-position: right;
 }
 
@@ -206,6 +237,51 @@ a:hover{
     text-align: left;
   }
 
+.lform .input-group, .lform .input-group1{
+    width: 100%;
+    height:45px;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    height:100%;
+    border: 2px solid #e7e7e75d;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.507);
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group1 input {
+    width: 100%;
+    height:100%;
+    border: 2px solid #e7e7e75d;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.507);
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.input-group1 + .input-group1 {
+    margin-left: 20px;
+  }
+
+.input-group input:focus, .input-group input:valid, .input-group1 input:focus, .input-group1 input:valid{
+    border-color:#41c76e;
+}
+
+.form-field {
+    display: flex;
+    
+}
+
+ 
 @media screen and (max-width: 1050px){
     .container{
         grid-gap: 5rem;
@@ -215,6 +291,10 @@ a:hover{
 @media screen and (max-width: 1000px){
     form{
         width: 290px;
+    }
+    
+    .lform{
+        width: 390px;
     }
 
     .login-content h2{
@@ -233,10 +313,6 @@ a:hover{
     }
 
     .img{
-        display: none;
-    }
-
-    .wave{
         display: none;
     }
 

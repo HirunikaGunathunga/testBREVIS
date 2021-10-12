@@ -8,9 +8,15 @@ class Admin extends Controller{
     
     public function index(){
       $courses = $this->adminModel->getcourse();
+      $lecturers = $this->adminModel->getlecturer();
+      $batches = $this->adminModel->getbatch();
+
 
       $data = [
-        'courses' => $courses
+        'courses' => $courses,
+        'lecturers' => $lecturers,
+        'batches' => $batches
+
       ];
         $this->view('admin/index', $data);
     }

@@ -74,7 +74,7 @@
             <div class="cover">
             <div class="ab">
                 <li class="btn-a">
-                    <a href="<?php echo URLROOT; ?>/courses/addcourse"><h3>Add Lecturer</h3></a>
+                    <a href="<?php echo URLROOT; ?>/courses/addLecturer"><h3>Add Lecturer</h3></a>
                 </li>
             </div>
             <div class="ab1">
@@ -87,16 +87,16 @@
             </div>
         </div>
           
-                <?php foreach($data['courses'] as $course) : ?>
+                <?php foreach($data['lecturers'] as $lecturer) : ?>
                     <div class="card-frame">
                         <div class="card">
                             <div class="book">
-                            <a href="<?php echo URLROOT; ?>/courses/viewcourse/<?php echo $course->course_id; ?>" >
+                            <a href="<?php echo URLROOT; ?>/lecturers/viewLecturer/<?php echo $lecturer->ID; ?>" >
                             <div class="lec"><img src="<?php echo URLROOT; ?>/img/lec.png"></div>
                             </a>
                             </div>
                             <div>
-                            <br><h4> <?php echo $course->course_name; ?> : <?php echo $course->course_id; ?></h4>
+                            <br><h4> <?php echo $lecturer->firstname; ?> <?php echo $lecturer->lastname; ?> : <?php echo $lecturer->ID; ?></h4>
                             </div>
                         </div>
                         <div>
@@ -114,9 +114,44 @@
 
     <div id="Batches" class="tabcontent">
         <div>
-            <li class="btn-a">
-            <a href="<?php echo URLROOT; ?>/courses/addcourse"><h3>Add Batch</h3></a>
-            </li>
+        <div class="cover">
+            <div class="ab">
+                <li class="btn-a">
+                    <a href="<?php echo URLROOT; ?>/courses/addLecturer"><h3>Add Batch</h3></a>
+                </li>
+            </div>
+            <div class="ab1">
+                <div class="search-container">
+                    <form action="<?php echo URLROOT; ?>/courses/searchcourse" method="POST">
+                    <input type="text" placeholder="Search by Lecturer ID.." name="search" required>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+          
+                <?php foreach($data['courses'] as $course) : ?>
+                    <div class="card-frame">
+                        <div class="card">
+                            <div class="book">
+                            <a href="<?php echo URLROOT; ?>/courses/viewcourse/<?php echo $course->course_id; ?>" >
+                            <div class="batch"><img src="<?php echo URLROOT; ?>/img/team.png"></div>
+                            </a>
+                            </div>
+                            <div>
+                            <br><h4> <?php echo $course->course_name; ?> : <?php echo $course->course_id; ?></h4>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="btn-a1">
+                            <a href="<?php echo URLROOT; ?>/courses/updatecourse/<?php echo $course->course_id; ?>"><h4>Update</h4></a>
+                            </div>
+                            <div class="btn-a2">
+                            <a href="<?php echo URLROOT; ?>/courses/deletecourse/<?php echo $course->course_id; ?>"><h4>Delete</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
         </div>
     </div>
 </div>

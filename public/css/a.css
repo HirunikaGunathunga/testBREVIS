@@ -28,6 +28,12 @@ body {
   width: 90%;
   height: 90%;
 }
+
+.book .batch img{
+
+  width: 120%;
+  height: 120%;
+}
   
 .search-container {
   margin-top: 18px;
@@ -265,6 +271,10 @@ body {
     overflow-x: hidden;
     padding-bottom: 30px;
  
+  }
+
+  .tab .fa-book-open, .tab .fa-user-graduate, .tab .fa-chalkboard-teacher, .tab .fa-users{
+    color: rgba(36, 37, 37, 0.801);
   }
 
 

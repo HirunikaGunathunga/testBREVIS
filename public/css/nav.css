@@ -1,44 +1,62 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+  }
+  
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 13vh;
-    background-color: rgb(243, 162, 12);
-    font-family: 'Ubuntu', sans-serif
+    min-height: 11vh;
+    background-color: #f0ad17;
+    font-family: 'Ubuntu', sans-serif;
+    overflow:hidden;
+    
 }
+
 .logo{
     color: gainsboro;
     text-transform: none;
     letter-spacing: 5px;
-    font-size: large;
+    font-size:large;
 }
+
+.logo a :hover{
+    color: #ffffff;
+}
+
+
 .nav-links{
     list-style: none;
-
 }
-li{
+
+nav li{
+    float: right;
     display: inline;
     justify-content: space-around;
     margin-inline-start: 8px;
 
-
 }
 
-li a{
+nav li a{
     font-weight: bold;
-    color: gainsboro;
+    color: rgba(95, 92, 92, 0.918);
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 3px;
-    width: 60px;
+    width: 90px;
 
 }
+
+
+nav h2{
+    color: rgba(154, 156, 151, 0.918);
+}
+
 .btn-login {
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     padding: 6px 24px;
+    text-align: center;
 }

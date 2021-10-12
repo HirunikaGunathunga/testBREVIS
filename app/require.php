@@ -1,8 +1,17 @@
 <?php
-    require_once 'core/Controllers.php';
-    require_once 'core/Application.php';
-    require_once 'core/Model.php';
-    require_once 'core/View.php';
-    require_once 'connection/model.php';
+  // Load Config
+  require_once 'config/config.php';
 
-    $init = new Application();
+  //Load Helper
+  require_once 'helpers/url_helper.php';
+  require_once 'helpers/session_helper.php';
+
+  //Load libraries
+  //require_once 'libraries/core.php';
+  //require_once 'libraries/controller.php';
+
+  // Autoload Core Libraries
+  spl_autoload_register(function($className){
+    require_once 'libraries/' . $className . '.php';
+  });
+  

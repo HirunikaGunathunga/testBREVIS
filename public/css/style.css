@@ -425,6 +425,399 @@ a:hover{
 .form-field {
     display: flex;  
 }
+
+/* -------------Landing Page --> start---------------------*/
+.l-container{
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.l-box-1{
+    height: 40em;
+    border: 3px #f0ad17 solid;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    margin: 4em;
+    display: flex;
+    order: 1;
+}
+.l-box-1 img:first-child{
+    position: absolute;
+    margin: 13.7em 2px 0;
+    width: 75.7em;
+    z-index: -1;
+}
+.l-box-1 img:last-child{
+    margin-left: 9em;
+    margin-top: 4em;
+    height: 25em;
+    width: 27em;
+    z-index: 1;
+}
+.text{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 3em;
+    width: 7em;
+    margin-top: 6em;
+    margin-left: 5em;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.l-box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90em;
+    border-radius: 15px;
+    order: 2;
+    margin: 5px;
+}
+.text-1{
+    display: block;
+    width: 10em;
+    margin-left: 10em;
+    text-align: center;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: darkcyan;
+    margin-top: 3px;
+    padding: 8px;
+    border-bottom: 5px #f0ad17 solid;
+
+
+}
+.c-content{
+
+    height: 85%;
+    width: 98%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.dis-course{
+    display: block;
+    flex-basis: 24%;
+    border: 2px #f0ad17 solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    height: 30em;
+}
+.dis-course img{
+    width: 18em;
+    height: available;
+    padding-bottom: 10px;
+
+}
+
+.l-box-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50em;
+    border-radius: 15px;
+    order: 3;
+    margin: 5px;
+}
+.fa-trophy , .fa-book-open{
+    color: #f0ad17;
+}
+/* -------------Landing Page --> end ---------------------*/
+
+/* -------------student dashboard --> start---------------------*/
+.stu-body{
+    background-color: floralwhite;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#student{
+    padding-top: 30px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+fieldset{
+    display: flex;
+    width: 22em;
+    border: 2px solid;
+    height: 37em;
+    border-radius: 10px;
+}
+legend{
+    display: block;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #333333;
+    font-weight: bold;
+    color: #eda614;
+    width: 6em;
+    padding: 3px 3px 3px 14px;
+    margin-left: 30px;
+
+}
+.course-h{
+    display: block;
+    border-bottom: 2px solid;
+    width: 14em;
+    height: 3em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+#container-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    order: 1;
+    flex: 1;
+    padding: 10px 0 25px 10px; /* left right bottom top*/
+    height: 25em;
+    width: 25em;
+}
+#container-2{
+    display: none;
+    border: 2px double;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+    height: auto;
+    width: 35em;
+    background-color: #FFF6CC;
+    order: 2;
+    flex: 2;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    padding-left: 10px;
+    flex-direction: column;
+}
+.box-2{
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.box-3{
+    border: 2px solid;
+    height: 4em;
+    padding: 12px 12px 4px;
+    margin: 10px;
+    width: 8em;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #333333;
+    color: #eda614;
+}
+
+
+#container-3{
+    order: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+#container-4{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #f0ad17;
+    height: 10em;
+    align-items: center;
+}
+.propic{
+    height: 100%;
+    border: 3px #eda614 solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.stu-details{
+    display: block;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    margin: 30px;
+}
+.stu-details ul li{
+    list-style: none;
+    margin: 10px;
+}
+.calender{
+    border: 3px solid;
+    margin-right: 0;
+    margin-left: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.certificates{
+    border: 3px solid;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #333333;
+    color: #eda614;
+    cursor: pointer;
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+#st{
+    margin-right: 20px;
+}
+.box-1:first-child{
+    margin-right: 10px;
+}
+.rect{
+    height: 30px;
+    width: available;
+    background-color: white;
+    border-style: solid;
+    border-bottom-color: goldenrod;
+    border-top-color: goldenrod;
+    border-right: none;
+    border-left: none;
+}
+.stu-course{
+    display: block;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    outline: none;
+    border: solid #eda614;
+    background-color: rgb(192,192,192);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 30px;
+}
+.stu-course:hover{
+    color: green;
+    background-position: right;
+}
+#SectionName{
+    display: none;
+    border: solid;
+    border-radius: 10px;
+    height: 100px;
+    width: 150px;
+}
+.fa-facebook-messenger{
+    border: 3px solid;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 80px;
+    height: 76px;
+    border-radius: 75%;
+    text-align: center;
+    cursor: pointer;
+    font-size: xxx-large;
+    background-color: #333333;
+    color: #eda614;
+}
+.stu-footer{
+    width: 100%;
+    height: 29em;
+    bottom: 0;
+    top: auto;
+    margin: 0;
+}
+.wave-1{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+.footer-content{
+    position: relative;
+    bottom: 10%;
+    left: 35%;
+    color: white;
+    font-size: large;
+}
+
+
+/* -------------student dashboard --> end---------------------*/
+
+/* -------------Lecturer section --> start---------------------*/
+.lec-view{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 85%;
+    height: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.lec-view th, tr,td{
+    padding: 2px;
+    border: 1px #f0ad17 solid;
+    height: 10px;
+}
+.lec-view th{
+    background-color: #f0ad17;
+    color: white;
+    font-weight: bold;
+}
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+.view-lecturer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* -------------Lecturer section --> end---------------------*/
+
  
 @media screen and (max-width: 1050px){
     .container{
